@@ -1,0 +1,71 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:backgroundTint="@color/black"
+            android:background="@drawable/rounded_button"
+            android:padding="8dp"
+            android:src="@android:drawable/ic_media_previous"
+            android:contentDescription="Back" />
+
+        <ImageView
+            android:id="@+id/detailsPosterImageView"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:scaleType="centerCrop"
+            android:contentDescription="Movie Poster" />
+
+        <ImageButton
+            android:id="@+id/shareButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_margin="8dp"
+            android:padding="8dp"
+            android:backgroundTint="@color/black"
+            android:background="@drawable/rounded_button"
+            android:src="@android:drawable/ic_menu_share"
+            android:contentDescription="Share" />
+
+        <TextView
+            android:id="@+id/detailsTitleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/detailsReleaseDateTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Release Date"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/detailsRatingTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rating"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:id="@+id/detailsOverviewTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Overview"
+            android:layout_marginTop="12dp" />
+    </LinearLayout>
+</ScrollView>
